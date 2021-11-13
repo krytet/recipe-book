@@ -22,10 +22,10 @@ jobs:
     #- name: Lint with flake8
     #  run: flake8 backend
 
-    - name: Test with pytest
+    #- name: Test with django test
       #run: pytest tests.py 
       # TODO вроверить нобходимость маршрута
-      run: python backend/foodgram/manage.py test
+    #  run: python backend/foodgram/manage.py test
 
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
