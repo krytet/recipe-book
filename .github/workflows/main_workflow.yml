@@ -51,7 +51,7 @@ jobs:
           context: ./backend
           file: ./backend/foodgram/Dockerfile
           push: true
-          tags: krytet/foodgram:latest 
+          tags: ${{ secrets.DOCKER_USERNAME }}/foodgram-project:latest
 
   deploy:
    runs-on: ubuntu-latest
