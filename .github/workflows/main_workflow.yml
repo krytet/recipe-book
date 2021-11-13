@@ -22,7 +22,7 @@ jobs:
     #- name: Lint with flake8
     #  run: flake8 backend
 
-    - name: Test with pytest
+    #- name: Test with pytest
       #run: pytest tests.py 
       # TODO вроверить нобходимость маршрута
       #run: python backend/foodgram/manage.py test
