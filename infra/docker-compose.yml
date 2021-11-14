@@ -9,8 +9,8 @@ services:
     env_file:
       - ./.env
 
-  dackend:
-    #image: krytet/porduct-manager #docker hub
+  backend:
+    image: krytet/recipe-book-backend #docker hub
     restart: always
     
     command: gunicorn foodgram.wsgi:application --bind 0.0.0.0:8000
