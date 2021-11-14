@@ -80,7 +80,7 @@ jobs:
           echo DB_PASSWORD=${{ secrets.DB_PASSWORD }} >> .env
           echo DB_HOST=${{ secrets.DB_HOST }} >> .env
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-          echo DJ_SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
+          echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
           sudo docker-compose up -d
          #sudo docker pull krytet/flask-first
          #sudo docker stop $(sudo docker ps -a -q)
