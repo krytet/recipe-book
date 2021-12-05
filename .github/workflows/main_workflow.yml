@@ -76,6 +76,8 @@ jobs:
         #source: "docker-compose.yaml, nginx/default.conf"
        #target: "~/app/"
        script: |
+          cd recipe-book
+          cd infra/
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/recipe-book-frontend 
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/recipe-book-backend
           sudo docker-compose stop
